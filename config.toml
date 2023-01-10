@@ -1,4 +1,4 @@
-baseURL = 'https://pay.umigol.com'
+baseURL = 'https://pay.lumigol.com'
 languageCode = 'en-us'
 title = 'Lumipay'
 theme = 'pay'
