@@ -3,22 +3,21 @@
         <div class="form-content">
             <div class="form-items">
                 <h3 class="form-title">{{.Title}}</h3>
-                <form>
-                    <div class="tab-content" id="stepsTabContent">
-                        <div class="sedeng">Pastikan kamu mengisi data di bawah sebelum menekan tombol pembayaran, lalu isikan data kembali sesuai dengan apa yang sudah kamu isi.</div>
-                        <form name="contact" method="POST" data-netlify="true">
-                            <input type="hidden" name="subject" value="Pelanggan baru beli {{.Title}} dari Lumigol.com" />
-                            <input type="text" class="form-control" placeholder="Full name" required />
-                            <input type="email" class="form-control" placeholder="Email address" required />
-                            <input type="text" class="form-control" placeholder="Ukuran Baju" required />
-                            <input type="radio" id="html" name="fav_language" value="HTML"> 
-                            <div class="kecil"><b>Ukurang baju yang tersedia:</b> <br>XS, S, M, L, XL, 2XL, 3XL, 4XL</div>
-                            <div class="form-button">
-                                <button id="submit" type="submit" class="ibtn">Process payment</button>
-                            </div>
-                        </form>
-                    </div>
-                </form>
+                <div class="tab-content" id="stepsTabContent">
+                    <div class="sedeng">Pastikan kamu mengisi data di bawah sebelum menekan tombol pembayaran, lalu isikan data kembali sesuai dengan apa yang sudah kamu isi.</div>
+                    <form name="contact" method="POST" data-netlify="true">
+                        <input type="hidden" name="subject" value="Pelanggan baru beli {{.Title}} dari Lumigol.com" />
+                        <input type="text" class="form-control" placeholder="Full name" required />
+                        <input type="email" class="form-control" placeholder="Email address" required />
+                        <input type="text" class="form-control" placeholder="Ukuran Baju" required />
+                        <input type="radio" id="html" name="fav_language" value="HTML"> 
+                        <div class="kecil"><b>Ukurang baju yang tersedia:</b> <br>XS, S, M, L, XL, 2XL, 3XL, 4XL</div>
+                        {{ .Content }}
+                        <!-- <div class="form-button">
+                            <button id="submit" type="submit" class="ibtn">Process payment</button>
+                        </div> -->
+                    </form>
+                </div>
             </div>
         </div>
     </div>
